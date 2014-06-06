@@ -1,0 +1,20 @@
+{
+  "time_datum": "2012-05-01T00:00:00Z",
+  "height_units": "metres",
+  "amplitude_datum": 3.6,
+  "constituents": [
+  {
+    "name": "M2",
+    "description": "Principal lunar semidiurnal constituent",
+    "amplitude": 0.377,
+    "phase": 212.1,
+    "speed": 28.9841042
+  },
+  {
+    "name": "S2",
+    "description": "Principal solar semidiurnal constituent",
+    "amplitude": 0.088,
+    "phase": 187.0,
+    "speed": 30.0
+  }]
+}
