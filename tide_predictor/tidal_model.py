@@ -49,7 +49,7 @@ class TidalModel(object):
     def _parse_constituents(constituents):
         return [Constituent(
                 name=c['name'],
-                description=c['description'],
+                description=c.get('description', ''),
                 amplitude=float(c['amplitude']),
                 phase=float(c['phase']),
                 speed=float(c['speed'])) for c in constituents]
