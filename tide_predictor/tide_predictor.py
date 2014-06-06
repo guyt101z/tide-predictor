@@ -28,7 +28,7 @@ def _find_in_filesystem(filename):
 
 
 def _find_in_example_data(filename):
-    example_dir = pjoin(abspath(dirname(__file__)), 'examples')
+    example_dir = pjoin(abspath(dirname(__file__)), '..', 'examples')
     example_filename = pjoin(example_dir, filename)
     if isfile(example_filename):
         return example_filename
