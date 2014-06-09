@@ -1,8 +1,14 @@
 {
   "time_datum": "2012-05-01T00:00:00Z",
   "height_units": "metres",
-  "amplitude_datum": 3.6,
   "constituents": [
+  {
+    "name": "Z0",
+    "description": "Mean sea level above chart datum",
+    "amplitude": 3.6,
+    "phase": 0.0,
+    "speed": 0.0
+  },
   {
     "name": "M2",
     "description": "Principal lunar semidiurnal constituent",

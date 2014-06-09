@@ -15,7 +15,6 @@ class TidalModel(object):
     def __init__(self, constituent_data):
         self.constituents = None
         self.time_datum = None
-        self.height_datum = None
 
         self._parse(constituent_data)
 
@@ -28,7 +27,7 @@ class TidalModel(object):
         amplitudes = map(
             partial(calculate_amplitude, t_hours),
             self.constituents)
-        return self.height_datum + sum(amplitudes)
+        return sum(amplitudes)
 
     def __unicode__(self):
         return '<TidalModel, {} constituents>'.format(len(self.constituents))
@@ -40,7 +39,6 @@ class TidalModel(object):
         assert data['height_units'] == 'metres'
 
         self.time_datum = parse_datetime(data['time_datum'])
-        self.height_datum = float(data['amplitude_datum'])
 
         self.constituents = TidalModel._parse_constituents(
             data['constituents'])
