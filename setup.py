@@ -30,7 +30,7 @@ setup(
     author='Sea Level Reseach Ltd',
     author_email='hello@sealevelresearch.com',
     url='https://github.com/sealevelresearch/tide-predictor',
-    install_requires=['docopt'],
+    install_requires=['docopt', 'pytz'],
     packages=['tide_predictor'],
     data_files={
         'examples': ['examples/*.json'],
